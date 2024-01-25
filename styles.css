@@ -4,6 +4,11 @@ body{
   font-family: Arial;
   margin: 30px;
 }
+.title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
 .button-css{
   cursor: pointer;
   background-color: black;
@@ -15,12 +20,13 @@ body{
 }
 .css-result{
   font-size: 30px;
-  padding: 10px;
+  padding-left: 45px;
   font-weight: bold;
 }
 .css-move{
   font-size: 20px;
   padding-top: 15px;
+  padding-left: 45px;
   color: rgb(235, 235, 130);
 }
 .css-imgSmall{
@@ -34,6 +40,7 @@ body{
   font-weight: bold;
   font-size: 22px;
   padding-top: 50px;
+  padding-left: 45px;
 }
 .button-reset{
   padding: 10px 13px;
