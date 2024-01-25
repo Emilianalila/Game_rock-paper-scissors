@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <title>Rock-Paper-Scissor</title>
+  <link rel="stylesheet" href="./styles.css"> <!-- css -->
 </head>
 <body>
   <h1>Play Rock Paper Scissor Game</h1>
   
   <button onclick="
    playGame('rock')
-  ">Rock</button>
+  " class="button-css"><img src="./img_files/rock-emoji.png" alt=""></button>
+
   <button onclick="
    playGame('paper')
-  ">Paper</button>
+  " class="button-css"><img src="./img_files/paper-emoji.png" alt=""></button>
+  
   <button onclick="
    playGame('scissors')
-  ">Scissors</button>
+  " class="button-css"><img src="./img_files/scissors-emoji.png" alt=""></button>
 
-  <p class="js-moves"></p>
-  <p class="js-result"></p>
-  <p class="js-score"></p>
+  <p class="js-result css-result"></p>
+  <p class="js-moves css-move"></p>
+  <p class="js-score css-score"></p>
 
   <button onclick="
    score.wins = 0;
@@ -27,10 +29,10 @@
    score.ties = 0;
    localStorage.removeItem('score'); 
    updateScore (); 
-  ">Reset</button>
+  " class="button-reset">Reset</button>
 
 
 
-  <script src="./index.js"></script>
+  <script src="./index.js"></script> <!-- js -->
 </body>
 </html>

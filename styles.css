@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+  color: aliceblue;
+  font-family: Arial;
+  margin: 30px;
+}
+.button-css{
+  cursor: pointer;
+  background-color: black;
+  border-radius: 130px;
+  border-color: white;
+  border-width: 4px;
+  padding: 15px;
+  margin: 10px;
+}
+.css-result{
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+.css-move{
+  font-size: 20px;
+  padding-top: 15px;
+  color: rgb(235, 235, 130);
+}
+.css-imgSmall{
+  height: 80px;
+  cursor: pointer;
+  background-color: black;
+  padding: 5px;
+  margin: 1px;
+}
+.css-score{
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 50px;
+}
+.button-reset{
+  padding: 10px 13px;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 30px;
+  margin-left: 30px;
+}

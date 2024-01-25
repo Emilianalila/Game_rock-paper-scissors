@@ -50,7 +50,10 @@ function playGame (playerMove){
   }
   
   document.querySelector('.js-moves')
-  .innerHTML = `You pick: ${playerMove}, Computer choose: ${computerMove}.`;
+  .innerHTML = `You pick:
+  <img src="./img_files/${playerMove}-emoji.png" class="css-imgSmall"> 
+  Computer pick:
+  <img src="./img_files/${computerMove}-emoji.png" class="css-imgSmall alt="">`;
 
   document.querySelector('.js-result')
   .innerHTML = `"${result}"`;
@@ -63,6 +66,7 @@ function playGame (playerMove){
 function updateScore(){ 
   document.querySelector('.js-score')
   .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties:${score.ties}`;
+ 
 }
 
 function pickRandonMove (){           
