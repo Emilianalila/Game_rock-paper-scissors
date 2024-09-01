@@ -18,34 +18,34 @@ function playGame (playerMove){
   let computerMove = pickRandonMove ();
   let result;
   if (playerMove === computerMove){
-    result = 'you are tie.';
+    result = 'you are tie 😬';
   }else if (playerMove === 'rock'){
     if(computerMove === 'paper'){
-      result = 'you lose.';
+      result = 'you lose 🥶';
     }else if(computerMove === 'scissors'){
-      result ='you win.'
+      result ='you win 🤭'
     }
   }else if(playerMove === 'paper'){
     if(computerMove === 'rock'){
-      result = 'you win.';
+      result = 'you win 🤭';
     }else if(computerMove === 'scissors'){
-      result ='you lose.'
+      result ='you lose 🥶'
     }
   }else if(playerMove === 'scissors'){
     if(computerMove === 'paper'){
-      result = 'you win.';
+      result = 'you win 🤭';
     }else if(computerMove === 'rock'){
-      result ='you lose.'
+      result ='you lose 🥶'
     }
   }else{
     result = 'pick rock, paper or scissors'
   }
   
-  if (result === 'you win.'){
+  if (result === 'you win 🤭'){
     score.wins += 1;
-  }else if (result === 'you lose.'){
+  }else if (result === 'you lose 🥶'){
     score.losses += 1;
-  }else if (result === 'you are tie.'){
+  }else if (result === 'you are tie 😬'){
     score.ties += 1;
   }
   
@@ -56,7 +56,7 @@ function playGame (playerMove){
   <img src="./img_files/${computerMove}-emoji.png" class="css-imgSmall alt="">`;
 
   document.querySelector('.js-result')
-  .innerHTML = `"${result}"`;
+  .innerHTML = `${result}`;
 
   updateScore(); 
 

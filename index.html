@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Rock-Paper-Scissor</title>
-  <link rel="stylesheet" href="./styles.css"> <!-- css -->
-</head>
-<body>
-  <h1 class="title">Play Rock Paper Scissor Game</h1>
-  
-  <button onclick="
-   playGame('rock')
-  " class="button-css"><img src="./img_files/rock-emoji.png" alt=""></button>
+  <head>
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- css -->
+  </head>
+  <body>
+    <h1 class="title">Play Rock Paper Scissor Game</h1>
+    <p class="central-paragraph">
+      Choose the icon you prefer to play with. You will compete against the
+      computer, which selects an option randomly.
+    </p>
 
-  <button onclick="
-   playGame('paper')
-  " class="button-css"><img src="./img_files/paper-emoji.png" alt=""></button>
-  
-  <button onclick="
-   playGame('scissors')
-  " class="button-css"><img src="./img_files/scissors-emoji.png" alt=""></button>
+    <div class="container">
+      <button
+        onclick="
+  playGame('rock')
+ "
+        class="button-css"
+      >
+        <img src="./img_files/rock-emoji.png" alt="" />
+      </button>
 
-  <p class="js-result css-result"></p>
-  <p class="js-moves css-move"></p>
-  <p class="js-score css-score"></p>
+      <button
+        onclick="
+  playGame('paper')
+ "
+        class="button-css"
+      >
+        <img src="./img_files/paper-emoji.png" alt="" />
+      </button>
 
-  <button onclick="
+      <button
+        onclick="
+  playGame('scissors')
+ "
+        class="button-css"
+      >
+        <img src="./img_files/scissors-emoji.png" alt="" />
+      </button>
+    </div>
+
+    <div class="second-container">
+      <p class="js-result css-result"></p>
+      <p class="js-moves css-move"></p>
+    </div>
+
+    <p class="js-score css-score"></p>
+
+    <button
+      onclick="
    score.wins = 0;
    score.losses = 0;
    score.ties = 0;
    localStorage.removeItem('score'); 
    updateScore (); 
-  " class="button-reset">Reset</button>
+  "
+      class="button-reset"
+    >
+      Reset
+    </button>
 
-
-
-  <script src="./index.js"></script> <!-- js -->
-</body>
+    <script src="./index.js"></script>
+    <!-- js -->
+  </body>
 </html>
