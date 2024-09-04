@@ -63,9 +63,9 @@ body{
   margin-right: 25px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .container {
-      flex-wrap: wrap;
-      background-color: red !important;
+      display: flex;
+      flex-direction: column;
   }
 }
