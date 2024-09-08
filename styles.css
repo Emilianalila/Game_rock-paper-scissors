@@ -1,22 +1,22 @@
-body{
+body {
   background-color: black;
   color: aliceblue;
   font-family: Arial;
   margin: 30px;
 }
-.title{
+.title {
   padding-top: 20px;
   padding-left: 50px;
 }
-.central-paragraph{
+.central-paragraph {
   padding-left: 48px;
 }
-.container{
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.button-css{
+.button-css {
   cursor: pointer;
   background-color: black;
   border-radius: 130px;
@@ -25,35 +25,45 @@ body{
   padding: 15px;
   margin: 10px;
 }
-.second-container{
+.second-container {
   display: flex;
-  flex-direction: row;justify-content: space-around;
-
+  flex-direction: row;
+  justify-content: space-around;
 }
-.css-result{
+.css-result {
   padding-top: 45px;
   font-size: 18px;
   font-weight: bold;
 }
-.css-move{
+.css-move {
   margin-top: 20px;
   font-size: 15px;
   color: rgb(235, 235, 130);
 }
-.css-imgSmall{
+.css-imgSmall {
   height: 50px;
   cursor: pointer;
   background-color: black;
   padding: 5px;
   margin: 1px;
 }
-.css-score{
+.third-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 100px;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    background-color: #8cffa0;
+    padding: 10px;
+}
+.css-score {
   font-weight: bold;
   font-size: 22px;
   padding-top: 30px;
   padding-left: 65px;
 }
-.button-reset{
+.button-reset {
   padding: 10px 13px;
   font-weight: bold;
   font-size: 15px;
@@ -63,9 +73,18 @@ body{
   margin-right: 25px;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 425px) {
   .container {
-      display: flex;
-      flex-direction: column;
+    flex-direction: column;
+  }
+  .second-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .css-move{
+    padding-left: 25px;
+  }
+  .css-result{
+    padding-left: 30px;
   }
 }
