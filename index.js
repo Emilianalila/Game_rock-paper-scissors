@@ -65,7 +65,7 @@ function playGame (playerMove){
 
 function updateScore(){ 
   document.querySelector('.js-score')
-  .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties:${score.ties}`;
+  .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
  
 }
 

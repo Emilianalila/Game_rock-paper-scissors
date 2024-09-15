@@ -6,10 +6,10 @@ body {
 }
 .title {
   padding-top: 20px;
-  padding-left: 50px;
+  text-align: center;
 }
 .central-paragraph {
-  padding-left: 48px;
+  text-align: center;
 }
 .container {
   display: flex;
@@ -74,17 +74,37 @@ body {
 }
 
 @media (max-width: 425px) {
+  .title {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+  .central-paragraph {
+    padding-left: 5px;
+  }
   .container {
-    flex-direction: column;
+    flex-direction: row;
   }
   .second-container {
     flex-direction: column;
     justify-content: center;
   }
   .css-move{
-    padding-left: 25px;
+    text-align: center;
   }
   .css-result{
     padding-left: 30px;
   }
+  .img{
+    width: 60px;
+  }
+  .css-imgSmall {
+    height: 30px;
+  }
+  .css-score {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  
 }
